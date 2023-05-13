@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HEYY {{one_user.first_name}} </h1>
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Genre</th>
+            <th>Release Date</th>
+            <th>Options</th>
+        </tr>
+        {% for movie in all_movies %}
+        <tr>
+            <td>{{'movie.name'}}</td>
+            <td>{{'movie.genre'}}</td>
+            <td>{{'movie.first_name'}}</td>
+            <td>
+                <a href="Edit"></a>
+                <a href="New Movie"></a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
